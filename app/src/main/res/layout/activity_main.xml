@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DFDFDD"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/valor_do_produto"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:id="@+id/text_valor_produto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="12dp"
+        android:hint="@string/simbolo_reais"
+        android:background="#ffffff"
+        android:padding="8dp"
+        android:textSize="30sp"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/taxa_do_delivery"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:id="@+id/text_porcrentagem_delivery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="12dp"
+        android:hint="@string/porcentagem"
+        android:background="#ffffff"
+        android:padding="8dp"
+        android:textSize="30sp"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/valor_ideal_de_venda"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:id="@+id/text_valor_ideal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:hint="@string/valor_reais"
+        android:background="#ffffff"
+        android:padding="8dp"
+        android:textSize="30sp"
+        />
+
+    <Button
+        android:id="@+id/button_calcular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/calcular"
+        android:textSize="16sp" />
+
+
+</LinearLayout>

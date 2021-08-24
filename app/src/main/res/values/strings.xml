@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">calcula valor delivery java</string>
+    <string name="valor_do_produto">Valor do produto</string>
+    <string name="valor_reais">R$</string>
+    <string name="calcular">Calcular</string>
+    <string name="valor_ideal_de_venda">Valor ideal de venda</string>
+    <string name="porcentagem">%</string>
+    <string name="taxa_do_delivery">Taxa do delivery</string>
+    <string name="simbolo_reais">R$</string>
+</resources>
