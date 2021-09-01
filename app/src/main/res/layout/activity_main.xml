@@ -9,6 +9,8 @@
     android:padding="16dp"
     tools:context=".MainActivity">
 
+
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -16,18 +18,26 @@
         android:textColor="@color/black"
         />
 
-    <TextView
-        android:id="@+id/text_valor_produto"
+    <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="2dp"
-        android:layout_marginBottom="12dp"
-        android:hint="@string/simbolo_reais"
-        android:background="#ffffff"
-        android:padding="8dp"
-        android:textSize="30sp"
+        android:layout_height="wrap_content">
 
-        />
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/text_valor_produto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="12dp"
+            android:background="#ffffff"
+            android:hint="@string/simbolo_reais"
+            android:inputType="numberDecimal"
+            android:padding="8dp"
+
+            android:textAlignment="textEnd"
+            android:textSize="30sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -35,18 +45,26 @@
         android:textColor="@color/black"
         />
 
-    <TextView
-        android:id="@+id/text_porcrentagem_delivery"
+    <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="2dp"
-        android:layout_marginBottom="12dp"
-        android:hint="@string/porcentagem"
-        android:background="#ffffff"
-        android:padding="8dp"
-        android:textSize="30sp"
+        android:layout_height="wrap_content">
 
-        />
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/text_porcrentagem_delivery"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="12dp"
+            android:background="#ffffff"
+            android:hint="@string/porcentagem"
+            android:inputType="number"
+            android:padding="8dp"
+
+            android:textAlignment="textEnd"
+            android:textSize="30sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
 
     <TextView
         android:layout_width="wrap_content"
@@ -55,16 +73,22 @@
         android:textColor="@color/black"
         />
 
-    <TextView
-        android:id="@+id/text_valor_ideal"
+    <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="2dp"
-        android:hint="@string/valor_reais"
-        android:background="#ffffff"
-        android:padding="8dp"
-        android:textSize="30sp"
-        />
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/text_valor_ideal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:background="#ffffff"
+            android:hint="@string/valor_reais"
+            android:padding="8dp"
+            android:textAlignment="textEnd"
+            android:textSize="30sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
 
     <Button
         android:id="@+id/button_calcular"
@@ -73,6 +97,5 @@
         android:layout_marginTop="16dp"
         android:text="@string/calcular"
         android:textSize="16sp" />
-
 
 </LinearLayout>

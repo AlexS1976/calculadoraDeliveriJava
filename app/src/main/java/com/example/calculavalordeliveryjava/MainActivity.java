@@ -36,11 +36,16 @@ public class MainActivity extends AppCompatActivity {
     public void calcula(){
 
         Double valor = Double.valueOf(valorProduto.getText().toString());
-        Double porcentagem = Double.valueOf(porcentagemDelivery.getText().toString());;
+        Double porcentagem = Double.valueOf(porcentagemDelivery.getText().toString());
+        Double calculo = porcentagem/100;
+        Double calculo2 = 1 - calculo;
         Double resultado;
 
 
-        resultado = valor / (1 - ( porcentagem/100));
+
+
+
+        resultado = valor / calculo2;
         valorIdeal.setText(resultado.toString());
 
     }
